@@ -184,10 +184,9 @@ header h1 {
     font-size: 30px;
 }
 /* End Name Css */
-
-
 /* End Image Css */
 
+/* Start Information css */
 .detail {
     position: absolute;
     height: 38%;
@@ -216,3 +215,4 @@ font-size: 18px;
 .detailContactWrapper h2{
 
 }
+/* End Information css */
