@@ -197,22 +197,22 @@ header h1 {
 }
 
 .detailInfor{
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .detailContact{
-    padding-top: 5px;
+
 }
 
 .detailContactWrapper{
 background: #1da7fc86;
 border-radius: 20px;
-font-size: 18px;
+height: 30px;
 }
 
 .detailContactWrapper h2{
-
+    font-size: 20px;
 }
 /* End Information css */
