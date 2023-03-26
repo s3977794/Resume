@@ -199,12 +199,9 @@ header h1 {
 .detailInfor{
     font-size: 12px;
     line-height: 1;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
-.detailContact{
-
-}
 
 .detailContactWrapper{
 background: #1da7fc86;
