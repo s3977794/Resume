@@ -1,10 +1,12 @@
 body {
     background-color: rgb(2, 133, 194);
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    overflow-x: hidden;
 }
 :root{
-    --imageBorder: 20% 15% 20% 15% / 5% 30% 5% 30%  ;
+    --imageBorder:   2%   ;
+    --imageBorder2: 50% ;
 }
 
 /* 
@@ -22,8 +24,8 @@ header h1 {
     position: relative;
     margin: auto;
     width: 600px;
-    height: 80%;
-    border-radius: 20px     ;
+    height: 1000px;
+    border-radius: 20px;
     background: linear-gradient(180deg, rgb(44, 151, 201), rgb(255, 243, 243) 90%);
 }
 
@@ -108,18 +110,36 @@ header h1 {
     height: 100%;
     width: 50%;
     margin: 0 auto;
-    border-radius: var(--imageBorder) ;
     background: rgb(255, 255, 255);
     overflow: hidden;
+    animation: avaAni 6s 2s linear infinite ;
 }
+
+@keyframes avaAni{
+    0%{
+        border-radius: var(--imageBorder);
+    }
+    25%{
+        border-radius: var(--imageBorder2);
+    }
+    50%{
+        border-radius: var(--imageBorder2);
+    }
+    75%{
+        border-radius: var(--imageBorder2);
+    }
+    100%{
+        border-radius: var(--imageBorder);
+    }
+} 
 
 .imgWrapperAni::before {
     content: '';
     position: absolute;
-    inset: -60px 90px;
-    background: linear-gradient(315deg, #0ebbff, #1b84fb);
+    inset: -90px 90px;
+    background: linear-gradient(315deg, #00e1ff, #006eff);
     transition: 0.5s;
-    animation: animate 3s linear infinite;
+    animation: animate 2.5s linear infinite;
 }
 
 @keyframes animate {
@@ -137,7 +157,7 @@ header h1 {
     position: absolute;
     inset: 4px;
     background: rgb(87, 168, 206);
-    border-radius: var(--imageBorder) ;
+    animation: avaAni 6s 2s linear infinite ;
     z-index: 1;
 }
 
@@ -146,7 +166,7 @@ header h1 {
     inset: 16px;
     border: 4px solid white;
     z-index: 2;
-    border-radius: var(--imageBorder) ;
+    animation: avaAni 6s 2s linear infinite ;
 
 }
 
@@ -158,7 +178,7 @@ header h1 {
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    border-radius: var(--imageBorder) ;
+    animation: avaAni 6s 2s linear infinite ;
 }
 
 /* End image wrapper */
@@ -189,8 +209,8 @@ header h1 {
 /* Start Information css */
 .detail {
     position: absolute;
-    height: 38%;
-    width: 80%;
+    height: 40%;
+    width: 85%;
     bottom: 0;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -199,17 +219,22 @@ header h1 {
 .detailInfor{
     font-size: 12px;
     line-height: 1;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
-
+.detailContact{
+    padding-top: 8px;
+}
 .detailContactWrapper{
 background: #1da7fc86;
 border-radius: 20px;
-height: 30px;
+height: 40px;
+margin: auto;
+width: 80%;
+box-shadow: 2px 2px 2px black;
 }
 
 .detailContactWrapper h2{
-    font-size: 20px;
+    font-size: 24px;
 }
 /* End Information css */
