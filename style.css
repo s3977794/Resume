@@ -26,6 +26,7 @@ header h1 {
     width: 600px;
     height: 1000px;
     border-radius: 20px;
+    border: 1px solid blanchedalmond;
     background: linear-gradient(180deg, rgb(44, 151, 201), rgb(255, 243, 243) 90%);
 }
 
