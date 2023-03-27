@@ -1,8 +1,9 @@
 body {
-    background-color: rgb(1, 115, 168);
+    background: linear-gradient(180deg, rgb(1, 115, 168,0.9), rgb(255, 243, 243,0.1) 100%);
     width: 100%;
     height: 1200px;
     overflow-x: hidden;
+
 }
 :root{
     --imageBorder:   2%   ;
