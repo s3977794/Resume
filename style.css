@@ -3,7 +3,9 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 :root{
     --imageBorder:   2%   ;
@@ -13,9 +15,10 @@ body {
 /* 
 Start Styling for the Heading */
 header h1 {
-    color: rgb(154, 213, 240);
+    color: rgb(247, 250, 252);
     text-align: center;
     font-size: 5vh;
+    padding: 0 50px;
 }
 
 /* Start Styling for the Heading */
@@ -25,8 +28,8 @@ header h1 {
 
     position: relative;
     margin: auto;
-    width: 700px;
-    height: 1000px;
+    width: 600px;
+    height: 800px;
     border-radius: 20px;
     border: 1px solid blanchedalmond;
     background: linear-gradient(180deg, rgb(44, 151, 201), rgb(255, 243, 243) 90%);
@@ -79,6 +82,7 @@ header h1 {
 .imgLogo {
     height: 10%;
     padding: 10px 40px 0 0;
+
 }
 
 .imgLogo img {
@@ -98,9 +102,9 @@ header h1 {
 
 .imgWrapperAni {
     position: relative;
-    height: 350px;
-    width: 350px;
-    margin: 2% auto;
+    height: 270px;
+    width: 270px;
+    margin: 20px auto 0 ;
     background: rgb(255, 255, 255);
     overflow: hidden;
     animation: avaAni 8s 2s linear infinite ;
@@ -187,15 +191,14 @@ header h1 {
 }
 
 .imgName span {
-    font-size: 60px;
+    font-size: 50px;
 
 }
  .mark {
     text-decoration: 2px underline wavy rgb(189, 199, 255);
 }
 .imgName h2{
-    font-size: 25px;
-
+    font-size: 20px;
     line-height: 1px;
 }
 /* End Name Css */
@@ -204,29 +207,31 @@ header h1 {
 /* Start Information css */
 
 .detailInfor{
-    height: 20%;
-    font-size: 15px;
-    line-height: 1;
+    height: 15%;
+    font-size: 10px;
     text-align: center;
 
+    padding-top: 0px;
 }
 
 .detailContact{
     width: 100%;
-    height: 15%;
-
+    height: 20%;
     text-align: center;
+
+    margin-top: 10px;
 }
 .detailContactWrapper{
 background: #1da7fc86;
 border-radius: 20px;
-height: 40px;
+height: 35px;
 margin: auto;
 width: 70%;
 box-shadow: 2px 2px 2px black;
+
 }
 
 .detailContactWrapper h2{
-    font-size: 24px;
+    font-size: 23px;
 }
 /* End Information css */
